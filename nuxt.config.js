@@ -1,9 +1,9 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'nuxt-ts',
+    title: 'Nuxt TS',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'pt'
     },
     meta: [
       { charset: 'utf-8' },
@@ -22,6 +22,7 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '@/plugins/hello.server'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -39,5 +40,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+    // publicPath: process.env.NODE_env === 'production' ? './' : '/'
+  },
+
+  target: 'static',
+  mode: 'universal'
 }
