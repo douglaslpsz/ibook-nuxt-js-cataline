@@ -1,5 +1,5 @@
 const myPlugin = () => {
-  console.log('Mensagem');
+  console.log('Bem-vindo ao iBook!');
 }
 
 export default myPlugin
