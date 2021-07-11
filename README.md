@@ -1,4 +1,4 @@
-# iBook with nuxt-ts
+# iBook with Nuxt
 
 ## Build Setup
 
