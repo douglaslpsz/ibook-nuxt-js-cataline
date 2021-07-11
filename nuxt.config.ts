@@ -1,14 +1,14 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Nuxt TS',
+    title: 'iBook',
     htmlAttrs: {
-      lang: 'pt'
+      lang: 'pt-br'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'Uma nova maneira de ler livros online!' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -17,8 +17,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-  ],
+  css: ['normalize.css/normalize.css', '@/assets/scss/base.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
@@ -35,14 +34,17 @@ export default {
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: [
-  ],
+  modules: ['@nuxtjs/style-resources'],
+
+  styleResources: {
+    scss: ['@/components/bosons/*.scss'],
+   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     // publicPath: process.env.NODE_env === 'production' ? './' : '/'
+    // npm rebuild node-sass
   },
 
-  target: 'static',
-  mode: 'universal'
+  target: 'static'
 }
