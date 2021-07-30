@@ -49,6 +49,7 @@ export default {
   build: {
     // publicPath: process.env.NODE_env === 'production' ? './' : '/'
     // npm rebuild node-sass
+    extractCSS: true
   },
 
   target: 'static'
