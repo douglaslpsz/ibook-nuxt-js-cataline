@@ -34,11 +34,24 @@ export default Vue.extend({
     display: grid;
     width: 100%;
     box-shadow: 0px 4px 11px 4px rgba(0, 0, 0, 0.13);
-    transition: all 300ms ease;
-    &:hover {
+    transition: all 70ms ease;
+    /*&:hover {
       transform: scale(1.1);
       box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.11);
+    }*/
+    &:hover {
+      transition: all 70ms ease;
+      transform: scale(1.1);
+      box-shadow: 0px 4px 17px 4px rgba(0, 0, 0, 0.11);
+      -webkit-box-shadow:  0 0 0 3px #246ec2!important;
+      box-shadow:  0 0 0 3px #246ec2!important;
     }
+
+    &:active {
+      transition: all 70ms ease;
+      transform: scale(0.95);
+    }
+    
   }
   h4 {
     font-size: 0.875rem;

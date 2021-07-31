@@ -38,7 +38,15 @@
     align-items: center;
     transition: all 300ms ease;
     &:hover {
+      transition: all 70ms ease;
+      -webkit-box-shadow: inset 0 0 0 3px #246ec2!important;
+      box-shadow: inset 0 0 0 3px #246ec2!important;
+    }
+    &:active {
+      transition: all 70ms ease;
       opacity: 0.89;
+      -webkit-box-shadow: inset 0 0 0 3px #246ec2!important;
+      box-shadow: inset 0 0 0 3px #246ec2!important;
     }
   }
 }
